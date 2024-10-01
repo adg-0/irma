@@ -1,0 +1,28 @@
+%YAML 1.2
+---
+model:
+  architecture: "lstm"
+  backbone: ""
+  id_name: "placeholder_name"
+  loss_function: "sparse_categorical_crossentropy"
+  epochs: 100
+  batch_size: 64
+  learning_rate: 0.001
+  decay: 0.000001
+path:
+  csv_data_folder: "/home/eisti/0Work/Irma_Project/data/csv/"
+#  csv_data_folder: "/home/eisti/0Work/Irma_Project/tmp/data_test/"
+  sequence_folder: "/home/eisti/0Work/Irma_Project/data/sequences-no-indicator/"
+#  sequence_folder: "/home/eisti/0Work/Irma_Project/data/sequences_no-ma50-100/"
+#  sequence_folder: "/home/eisti/0Work/Irma_Project/tmp/sequences_test/"
+  prediction_folder: "/home/eisti/0Work/Irma_Project/data/predictions/"
+#  prediction_folder: "/home/eisti/0Work/Irma_Project/tmp/predictions_test/"
+  logs_folder: "/home/eisti/0Work/Irma_Project/logs/"
+  model_folder: "/home/eisti/0Work/Irma_Project/models/"
+data:
+  api_url: "https://api.kucoin.com"
+  timeframe: "1day"
+  indicators_added: ""
+  indicators_removed: ""
+  sequence_length: 10
+  split_ratio: 0.12
