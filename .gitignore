@@ -164,6 +164,7 @@ cython_debug/
 # Project
 python_distrib/Python-3.9.8/
 api
+src/config.yaml
 data/
 logs/
 models/
